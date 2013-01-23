@@ -234,6 +234,7 @@ body {
     width: 100%;
     margin: 0 auto;
     background-color: #fff5f5;
+
 }
 #footer {
      background: url('../img/debut_dark.png') repeat #222;
@@ -318,7 +319,7 @@ a:active, a:hover {
         border: none;
         position: relative;
         left: 90%;
-        top: -37px;
+        top: -39px;
     }
 
 #content {
@@ -407,12 +408,13 @@ article {
         padding: 10px 20px;
     }
 
-#contact {
+#contact, #proposerStage {
     padding-left: 0;
     margin-left: 0;
 }
     
-#contact input, #contact textarea {
+#contact input, #contact textarea,
+#proposerStage input, #proposerStage textarea {
     background-color: #fff;
     border: 1px solid #cdcdcd;
     -webkit-border-radius: 3px;
@@ -431,28 +433,31 @@ article {
     -webkit-transition: all 0.2s linear 0s;
     -o-transition: all 0.2s linear 0s;
 }
-    #contact input:hover, #contact input:focus, #contact textarea:hover, #contact textarea:focus {
+    #contact input:hover, #contact input:focus, #contact textarea:hover, #contact textarea:focus,
+    #proposerStage input:hover, #proposerStage input:focus, #proposerStage textarea:hover, #proposerStage textarea:focus {
         border: 1px solid #5d5d5d;
     }
-    #contact label {
+    #contact label, #proposerStage label {
         margin-top: 1em;
-        font-size: 12px;
+        font-size: 14px;
         color: #666;
         font-variant:  small-caps;
         text-shadow: -1px -1px 1px #fff;
         font-weight: bold;
+        display: block;
     }
 
-    #contact input[type=submit] {
-        font-size: 16px;
+    #contact input[type=submit], #proposerStage input[type=submit] {
+        font-size: 25px;
         color: #CE78A0;
-        text-shadow: -1px -1px 1px #fff;
+        text-shadow: -1px -1px 0px #fff;
         border: 1px solid #f1bad4;
         font-variant:  small-caps;
         background-color: #fce5f0;
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
     }
 
-    #contact input[type=submit]:hover  {
+    #contact input[type=submit]:hover, #proposerStage input[type=submit]:hover  {
        background: rgb(255, 201, 255);
         background: -moz-linear-gradient(270deg, rgb(255, 201, 255) 30%, rgb(255, 217, 255) 70%);
         background: -webkit-linear-gradient(270deg, rgb(255, 201, 255) 30%, rgb(255, 217, 255) 70%);
@@ -460,6 +465,77 @@ article {
         background: -ms-linear-gradient(270deg, rgb(255, 201, 255) 30%, rgb(255, 217, 255) 70%);
         background: linear-gradient(0deg, rgb(255, 201, 255) 30%, rgb(255, 217, 255) 70%);
     }
+
+
+    #content .stageTitle {
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;        
+        margin: 20px 0px 0px 0px;
+        font-weight: normal;
+        font-style: italic;
+        font-size: 30px;
+        color: #555;
+        background: none;
+        height: auto;
+        width: auto;
+        position: static;
+        padding: 0px;
+        text-shadow: 1px 1px 0px #fff;
+    }
+        #content .stageTitle strong {
+            background: none;
+            color: #222;
+            font-weight: normal;
+            border: 1px solid #ccc;
+            padding: 15px 10px 20px 10px;
+            border-radius: 80px;
+        }
+
+    #proposerStage {
+        width: 100%;
+    }
+
+    #proposerStage fieldset {
+        border: 1px solid #f1bad4;
+        padding: 10px 10px 5px 10px;
+        margin: 10px 0px 15px 0px;
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+    #proposerStage legend {
+        font-size: 12px;
+        color: #CE78A0;
+        padding: 0px 15px;
+        margin: 10px 15px 0px 15px;
+        font-weight: normal;
+        text-transform: uppercase;
+        text-align: right;
+        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    }
+
+        input#proposerStage_cp, input#rechercherStage_annee {
+            width: 25%;
+        }
+        input#proposerStage_localite, input#rechercherStage_ecole {
+            width: 70%;
+            float: right;
+        }
+
+        #proposerStage label[for="proposerStage_cp"], #proposerStage label[for="rechercherStage_annee"] {
+            display: inline-block;
+            width: 25%;
+        }
+
+        #proposerStage label[for="proposerStage_localite"], #proposerStage label[for="rechercherStage_ecole"] {
+            display: inline-block;
+            width:  70%;
+            float: right;
+        }
+
 
 #acces img {
     height: auto;
@@ -869,7 +945,7 @@ article {
             right: 10px;
          }
          #search input[type="submit"] {
-            top: -36px;
+            top: -38px;
             left: 80%;
          }
          #content h2 {
