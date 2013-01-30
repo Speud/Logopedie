@@ -37,8 +37,8 @@ a:active,a:hover{color:#6B3B61;}
 #menu{background:url('../img/debut_dark.png') repeat #222222;border-bottom:1px solid #000;border-top:1px solid #ce78a0;}
 #menu ul{padding:0;}
 #menu ul li{display:inline-block;font-size:14px;font-weight:bold;text-shadow:-1px -1px 1px #000000;margin-top:7px;}
-#menu .active a:link,#menu .active a:visited,#menu li a:hover{font-family:sans-serif;background:url('../img/itemMenu.png') no-repeat;color:#c8f5c6;text-shadow:-1px -1px 0 #3d6b3b;}
-#menu a:link,#menu a:visited{font-family:sans-serif;text-decoration:none;color:#aaa;padding:30px 10px 30px 23px;}
+#menu .active a:link,#menu .active a:visited,#menu li a:hover{font-family:'Trebuchet MS',Verdana,Arial,sans-serif;background:url('../img/itemMenu.png') no-repeat;color:#c8f5c6;text-shadow:-1px -1px 0 #3d6b3b;}
+#menu a:link,#menu a:visited{font-family:'Trebuchet MS',Verdana,Arial,sans-serif;text-decoration:none;color:#aaa;padding:30px 10px 30px 23px;}
 #slide img{width:100%;height:auto;border-bottom:1px solid #aaa;-webkit-box-shadow:1px 2px 5px rgba(119, 50, 50, 0.3);-moz-box-shadow:1px 2px 5px rgba(119, 50, 50, 0.3);box-shadow:1px 2px 5px rgba(119, 50, 50, 0.3);}
 #search input[type="search"]{background-color:#fff;color:#ce78a0;font-size:12px;padding:7px 10px;border:1px solid #ce78a0;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;position:relative;margin-left:0.5em;transition:all 0.2s linear 0s;-moz-transition:all 0.2s linear 0s;-webkit-transition:all 0.2s linear 0s;-o-transition:all 0.2s linear 0s;}
 #search input[type="search"]:focus,#search input[type="search"]:hover{border:1px solid #6b3b61;color:#6b3b61;}
@@ -110,7 +110,7 @@ input#rechercherStage_ecole{width:60%;float:right;}
 .anglais{background-position:-48px 0px;}
 .enseignements h1+section{margin-left:0px;}
 #content h2.enseignementsTitle{color:#c8f5c6;background:url('../img/bg_titre2c.png') no-repeat;height:75px;width:auto;text-shadow:-1px -1px 0px #3b6b3f;position:relative;left:-7px;top:10px;padding:3px 0px 0px 15px;margin:0 0 10px 0;}
-.enseignements .enseignementsTitle a:link{color:#e1fee0;font-family:sans-serif;font-size:0.8em;font-weight:bold;display:inline-block;padding-right:10px;line-height:20px;}
+.enseignements .enseignementsTitle a:link{color:#e1fee0;font-family:'Trebuchet MS',Verdana,Arial,sans-serif;font-size:0.8em;font-weight:bold;display:inline-block;padding-right:10px;line-height:20px;}
 .enseignements h3 a:link{font-size:1.3em;font-style:italic;font-weight:normal;}
 .enseignements p{font-size:14px;color:#666;font-variant:small-caps;text-shadow:-1px -1px 1px #ffffff;font-weight:bold;}
 .enseignements strong{background:none;}
