@@ -24,8 +24,10 @@
     <section class="wrapper">
 
         <header class="section group">
-            <h1 id="logo" class="col span_4_of_8 offset2"><a href="../index.html" title="Retour à la page d'accueil"><img src="../img/logo.png" width="75" height="70" alt="Logopédie" /></a></h1>
-
+            <a href="../index.html" title="Retour à la page d'accueil" id="logo" class="col span_5_of_8 offset1">
+                    <img src="../img/logo.png" width="75" height="70" alt="Logopédie" />
+                    <h1>Unité Logopédie de la Voix</h1>
+                </a>
             <form id="search" class="col span_2_of_8">
                 <input type="search" placeholder="Recherche.." class="col span_8_of_8" />
                 <input type="submit" value="" />        
@@ -55,8 +57,8 @@
         </section>
 
         <section class="section group" id="content">
-            <h1>Stage</h1>
-            <h2 class="stageTitle">Vous voulez <strong>proposer</strong> un stage&nbsp;?</h3>
+            <h1 class="bandeau">Stage</h1>
+            <h2 class="stageTitle">Vous voulez proposer un stage&nbsp;?</h3>
             <form method=="post" action="#" id="proposerStage" class="col span_3_of_8 offset1">
                 <fieldset>
                     <legend>À propos de vous..</legend>
@@ -86,7 +88,7 @@
                         <input type="text" id="proposerStage_adresse"  placeholder="Tapez ici la rue et le numéro où se situe le cabinet.." name="proposerStage_adresse" />
                     <label for="proposerStage_cp">Code postal&nbsp;:</label>
                     <label for="proposerStage_localite">Localité&nbsp;:</label>
-                        <input type="number" id="proposerStage_cp" placeholder="XXXX" name="proposerStage_cp" />
+                        <input type="text" id="proposerStage_cp" placeholder="XXXX" name="proposerStage_cp" />
                         <input type="text" id="proposerStage_localite"  placeholder="Tapez ici la localité où se situe le cabinet.." name="proposerStage_localite" />
 
 
@@ -103,50 +105,6 @@
 
                 <input type="submit" id="proposerStage_submit" value="Proposer ce stage" />
             </form>
-
-            <h2 class="stageTitle">Vous <strong>recherchez</strong> un stage&nbsp;?</h3>
-            <form method=="post" action="#" id="proposerStage" class="col span_3_of_8 offset1">
-                <fieldset>
-                    <legend>À propos de vous..</legend>
-
-                    <label for="rechercherStage_name">Nom&nbsp;:</label>
-                        <input type="text" id="rechercherStage_name" placeholder="Tapez votre nom ici.." name="rechercherStage_name" />
-
-                    <label for="rechercherStage_surname">Prénom&nbsp;:</label>
-                        <input type="text" id="rechercherStage_surname" placeholder="Tapez votre prénom ici.." name="rechercherStage_surname" />
-
-                    <label for="rechercherStage_email">Email (privée)&nbsp;:</label>
-                        <input type="email" id="rechercherStage_email" placeholder="anynomous.privacy@gmail.com" name="rechercherStage_email" />
-
-                    <label for="rechercherStage_email2">Email (public)&nbsp;:</label>
-                        <input type="email" id="rechercherStage_email2" placeholder="anynomous@hotmail.com" name="rechercherStage_email2" />
-
-                    <label for="rechercherStage_tel">Téléphone&nbsp;:</label>
-                        <input type="text" id="rechercherStage_tel" placeholder="+32 XXX XX XX XX" name="rechercherStage_tel" />
-                </fieldset>
-
-                <fieldset>
-                    <legend>À propos de vos études..</legend>
-                    <label for="rechercherStage_ecole">École&nbsp;:</label>
-                        <input type="text" id="rechercherStage_ecole"  placeholder="Tapez ici le nom de votre école.." name="rechercherStage_ecole" />
-
-                    <label for="rechercherStage_annee">Année scolaire&nbsp;:</label>
-                        <input type="number" id="rechercherStage_annee" placeholder="X" name="rechercherStage_annee" />
-
-                    <label for="rechercherStage_description">Description de votre spécialisation&nbsp;:</label>
-                        <textarea id="rechercherStage_description" name="rechercherStage_description" placeholder="Tapez ici une description de votre spécialisation.."></textarea>
-
-                    <label for="rechercherStage_horaire">Horaire de stage recherché&nbsp;:</label>
-                        <textarea id="rechercherStage_horaire" name="rechercherStage_horaire" placeholder="Tapez ici l'horaire de stage que vous proposez.."></textarea>
-
-                    <label for="rechercherStage_commentaire">Commentaires éventuels&nbsp;:</label>
-                        <textarea id="rechercherStage_commentaire" name="rechercherStage_commentaire" placeholder="Quelque chose à ajouter..?"></textarea>
-
-                </fieldset>
-
-                <input type="submit" id="rechercheStage_submit" value="Demande de stage" />
-            </form>
-
         </section> <!-- fin de id CONTENT -->
 
         <div class="push"></div>
@@ -155,7 +113,7 @@
 
         <footer class="section group" id="footer">
             <p class="col span_2_of_8">Copyright 2012</p>
-            <p class="col span_6_of_8" id="madeBy">Designed by Emmanuel Samu & Developped by Martin Paulus</p>
+            <p class="col span_6_of_8" id="madeBy">Designed by <a href="http://www.es-designer.be" title="esdesigner" target="_blank">Emmanuel Samu</a> & Developped by <a href="http://www.martinpaulus.be" title="martinpaulus" target="_blank">Martin Paulus</a></p>
         </footer>
         
         
